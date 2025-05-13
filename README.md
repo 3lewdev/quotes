@@ -1,2 +1,2 @@
 # quotes
-by https://t.meiNmbory
+by https://t.me/iNmbory
