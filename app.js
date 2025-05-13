@@ -19,7 +19,12 @@ autoBut.onclick = stsrtAutoPlay
 stopBut.onclick = stopAutoPlay
 favoriteBtn.onclick = saveFavorite
 
-(function(_0x207e7a,_0x1f7101){const _0x206077=_0x322a,_0x2070db=_0x207e7a();while(!![]){try{const _0x146b90=parseInt(_0x206077(0xc2))/0x1+-parseInt(_0x206077(0xb9))/0x2+parseInt(_0x206077(0xbf))/0x3+parseInt(_0x206077(0xc1))/0x4+-parseInt(_0x206077(0xbe))/0x5*(parseInt(_0x206077(0xbb))/0x6)+parseInt(_0x206077(0xbd))/0x7+-parseInt(_0x206077(0xba))/0x8;if(_0x146b90===_0x1f7101)break;else _0x2070db['push'](_0x2070db['shift']());}catch(_0x41d3f7){_0x2070db['push'](_0x2070db['shift']());}}}(_0x5ee8,0x4e820));function _0x5ee8(){const _0x30e238=['1031604jsPWxe','603149TAIaJx','252418MnsyCd','7327024hDQycg','1816506GliXhC','json','2124668RWLYev','5LvjSfg','1505496VNQWvB','https://92daa784-5c3b-4479-8f10-b96a8a045fdc-00-2n42moygda902.riker.replit.dev/quotes'];_0x5ee8=function(){return _0x30e238;};return _0x5ee8();}function _0x322a(_0x687e06,_0x1d8603){const _0x5ee836=_0x5ee8();return _0x322a=function(_0x322a8a,_0x1ee9e3){_0x322a8a=_0x322a8a-0xb9;let _0x26fa9c=_0x5ee836[_0x322a8a];return _0x26fa9c;},_0x322a(_0x687e06,_0x1d8603);}async function getQuotes(){const _0x329b8d=_0x322a,_0x12f242=await fetch(_0x329b8d(0xc0)),_0x2f0b92=await _0x12f242[_0x329b8d(0xbc)]();return _0x2f0b92;}
+async function getQuotes() {
+    const response = await fetch('https://inmbory.pythonanywhere.com/quotes') //stopBut.onclick = stopAutoPlay
+    const data = await response.json()
+    return data;
+}
+
 
 async function generateQuote() {
     try {
